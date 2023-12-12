@@ -1,0 +1,40 @@
+{
+    "name": "apextourneystreams-tournaments-api",
+    "version": "1.0.0",
+    "exports": "./src/index.ts",
+    "type": "module",
+    "scripts": {
+        "start": "node ./src/index.ts",
+        "tsc": "tsc",
+        "start:dev": "tsx watch ./src/index.ts",
+        "start:prod": "node backend_build/index.js",
+        "lint": "eslint ."
+    },
+    "engines": {
+        "node": "18.16.1"
+    },
+    "author": "ktatu",
+    "license": "ISC",
+    "dependencies": {
+        "@zodios/core": "^10.9.6",
+        "bullmq": "^4.12.2",
+        "dotenv": "^16.3.1",
+        "mongoose": "^7.5.3",
+        "node-schedule": "^2.1.1",
+        "qs": "^6.11.2",
+        "redis": "^4.6.8",
+        "redis-om": "^0.4.2",
+        "zod": "^3.22.2"
+    },
+    "devDependencies": {
+        "@tsconfig/node18": "^18.2.1",
+        "@types/node": "^20.6.0",
+        "@types/node-schedule": "^2.1.0",
+        "@types/qs": "^6.9.8",
+        "@typescript-eslint/eslint-plugin": "^6.6.0",
+        "@typescript-eslint/parser": "^6.6.0",
+        "eslint": "^8.49.0",
+        "tsx": "^3.12.8",
+        "typescript": "^5.2.2"
+    }
+}
